@@ -1,5 +1,5 @@
 // part 2: Basics
-//section 1: Primitive Types - Title
+//section 4: Dynamic Typing
 let name = 'Hossein';          // String Literal
 let age = 30;                  // Number Literal
 let isApproved = true;         // Boolean Literal
