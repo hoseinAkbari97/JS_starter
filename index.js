@@ -4,4 +4,11 @@ let person = {
     name: 'Hossein',
     age: '28'
 };
-console.log(person)
+
+// dot notation
+person.name = 'John';
+console.log(person.name);
+
+// bracket notation
+person['age'] = 30
+console.log(person.age)
