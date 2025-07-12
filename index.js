@@ -1,8 +1,7 @@
 // part 2: Basics
-//section 4: Dynamic Typing
-let name = 'Hossein';          // String Literal
-let age = 30;                  // Number Literal
-let isApproved = true;         // Boolean Literal
-let firstName = undefined;     // Undefined Literal
-let lastName;                  // Also Undefined Literal
-let selectedColor = null       // Null Literal
+//section 4: Objects
+let person = {
+    name: 'Hossein',
+    age: '28'
+};
+console.log(person)
