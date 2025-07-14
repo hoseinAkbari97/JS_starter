@@ -1,8 +1,5 @@
-// part 2: Basics
-//section 8: Types of functions
-function square(number) {
-    return number * number;
-}
-
-let number = square(2);
-console.log(number)
+// part 2: Operators
+//section 6: Ternary Operators
+let points = 200;
+let type = points > 100 ? 'gold' : 'silver';
+console.log(type);
