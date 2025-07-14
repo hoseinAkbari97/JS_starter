@@ -1,7 +1,8 @@
 // part 2: Basics
-//section 7: functions
-function greet(name)    {
-    console.log('Hello ' + name);
+//section 8: Types of functions
+function square(number) {
+    return number * number;
 }
 
-greet('Hossein');
+let number = square(2);
+console.log(number)
