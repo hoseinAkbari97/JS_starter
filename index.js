@@ -1,4 +1,14 @@
 // part 2: Operators
-// section 9: Bitwise Operators
-console.log(1 | 2)
-console.log(1 & 2)
+// section 12: Swap the Values
+// Defining the variables
+let a = 'red';
+let b = 'blue';
+
+// Swapping the values
+let c = a;
+a = b;
+b = c;
+
+// Printing the results
+console.log(a)
+console.log(b)
