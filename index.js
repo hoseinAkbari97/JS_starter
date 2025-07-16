@@ -1,9 +1,7 @@
 // part 2: Operators
-// section 7: Logical Operators
-let highIncome = false;
-let goodCreditScore = true;
-let eligibleForLoan = highIncome || goodCreditScore;
+// section 8: Logical Operators with Non-Booleans
+let userColor = 'red';
+let defaultColor = 'blue'
+let currentColor = userColor || defaultColor;
 
-let applicationRefused = !eligibleForLoan
-
-console.log(applicationRefused)
+console.log(currentColor)
