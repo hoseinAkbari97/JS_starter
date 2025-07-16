@@ -1,4 +1,4 @@
-// part 2: Operators
+// part 4: Control Flow
 // section 12: Swap the Values
 // Defining the variables
 let a = 'red';
