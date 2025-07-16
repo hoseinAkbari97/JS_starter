@@ -1,14 +1,10 @@
 // part 4: Control Flow
-// section 12: Swap the Values
-// Defining the variables
-let a = 'red';
-let b = 'blue';
+// section 1: if...else
+let hour = 10;
 
-// Swapping the values
-let c = a;
-a = b;
-b = c;
-
-// Printing the results
-console.log(a)
-console.log(b)
+if (hour >= 6 && hour < 12)
+    console.log('Good morning');
+else if (hour >= 12 && hour < 18)
+    console.log('Good afternoon');
+else 
+    console.log('Good evening');
