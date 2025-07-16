@@ -1,5 +1,8 @@
 // part 2: Operators
-//section 6: Ternary Operators
-let points = 200;
-let type = points > 100 ? 'gold' : 'silver';
-console.log(type);
+// section 7: Logical Operators
+// Logical AND (&&)
+// Return TRUE if both operants are TRUE
+console.log(true && true);
+console.log(false && true);
+console.log(true && false);
+console.log(false && false);
