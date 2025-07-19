@@ -9,4 +9,4 @@ const person = {
 
 // Iterating through the person's properties
 for (let key in person)
-    console.log(key);
+    console.log(key, person[key]);
