@@ -1,8 +1,8 @@
 // part 4: Control Flow
-// section 1: While
+// section 1: Do...While
 
 let i = 0;
-while(i<=5){
+do {
     if (i % 2 !== 0) console.log(i);
     i++;
-}
+}   while(i <= 5);
