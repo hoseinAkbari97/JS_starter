@@ -7,12 +7,12 @@
 //  Not divisible by 3 or 5 ==>  input
 //  Not a number ==> 'Not a number'
 
-const output = FizzBuzz(45)
+const output = FizzBuzz(false)
 console.log(output)
 
 function FizzBuzz(input)    {
     if (typeof input !== 'number')
-        return  'Not a number!';
+        return  NaN;
 
     if (input % 15 === 0)
         return  'FizzBuzz';
