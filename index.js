@@ -1,14 +1,15 @@
 // part 4: Control Flow
-// section 9: Break and Continue
+// section 10: Exercise
 
-let i = 0;
-while (i <= 10)  {
-    if (i === 9) break;
-    if (i % 2 === 0)    {
-        i++;
-        continue;
+function max_finder(num1, num2) {
+    if (num1 < num2)    {
+        console.log(num2);
     }
-
-    console.log(i);
-    i++;
+    else if (num1 > num2)   {
+        console.log(num1)
+    }
+    else
+        console.log("The numbers are equal.")
 }
+
+max_finder(3,3)
