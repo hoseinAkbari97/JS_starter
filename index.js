@@ -1,7 +1,10 @@
 // part 4: Control Flow
-// section 8: For...of
+// section 9: Break and Continue
 
-// Defining an object and its properties
-const colors = ['red', 'green', 'blue'];
-for (let color of colors)
-    console.log(color);
+let i = 0;
+while (i <= 10)  {
+    if (i == 5) break
+
+    console.log(i);
+    i++;
+}
