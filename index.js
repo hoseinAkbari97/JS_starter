@@ -1,9 +1,8 @@
 // part 4: Control Flow
-// section 10: Exercise
+// section 11: Exercise2
 
-let number = max_finder(3,3);
-console.log(number);
+console.log(isLandscape(800, 1600))
 
-function max_finder(num1, num2) {
-    return (num1 > num2) ? num1 : num2;
+function isLandscape(width, height) {
+    return (width > height);
 }
