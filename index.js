@@ -1,17 +1,19 @@
 // part 4: Control Flow
 // section 13: Exercise: Demerit Points
 
-checkSpeed(445);
+checkSpeed(90);
 
 function checkSpeed(speed)  {
-    if (speed < 75) 
-        console.log("ok")
+    const speedLimit = 70;
+    const kmPerPoint = 5;
 
-    else    {
-        let point = Math.floor((speed-70)/5) < 12;
-        if (point < 12)
-            console.log(point);
+    if (speed <  speedLimit)
+        console.log("Ok")
+    else {
+        const points = Math.floor((speed - speedLimit) / kmPerPoint);
+        if (points >= 12)
+            console.log("License suspended!!!");
         else
-            console.log('License suspended!!!');
+            console.log("points: ", points)
     }
 }
