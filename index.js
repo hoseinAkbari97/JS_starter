@@ -1,12 +1,12 @@
 // part 4: Control Flow
-// section 14: Exercise: Even & Odd Numbers
+// section 15: Exercise: Count Truthy & Falsy Values
+// Write a function that takes an array and counts the number of truthy and falsy values in it
+// The falsy values are: false, null, undefined, 0, NaN, and ''
 
-showNumbers(10);
-// Write a function that takes a limit and displays all even and odd numbers up to that limit
-
-function showNumbers(limit) {
-    for (let i = 0; i <= limit; i++) {
-        const message = (i % 2 === 0) ? 'EVEN' : 'ODD';
-        console.log(i, message);
+function countTruthy(array) {
+    let count = 0;
+    for (let value of array) {
+        if (value) count++;
     }
+    return count;
 }
