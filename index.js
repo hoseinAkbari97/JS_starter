@@ -1,15 +1,16 @@
 // part 4: Control Flow
-// section 15: Exercise: Count Truthy & Falsy Values
-// Write a function that takes an array and counts the number of truthy and falsy values in it
-// The falsy values are: false, null, undefined, 0, NaN, and ''
+// section 16: String Properties
 
-const array = [0, null, undefined, '', NaN, false, 1, 'hello', true];
-console.log(countTruthy(array));
+const movie = {
+  title: 'Inception',
+  year: 2010,
+  director: 'Christopher Nolan'};
 
-function countTruthy(array) {
-    let count = 0;
-    for (let value of array) {
-        if (value) count++;
-    }
-    return count;
+showProperties(movie);
+
+function showProperties(obj) {
+  for (let prop in obj) {
+    if (typeof obj[prop] === 'string') 
+    console.log(prop + ': ' + obj[prop]);
+  }
 }
