@@ -1,16 +1,14 @@
 // part 4: Control Flow
-// section 16: String Properties
+// section 17: Sum of multiples of 3 and 5
 
-const movie = {
-  title: 'Inception',
-  year: 2010,
-  director: 'Christopher Nolan'};
+console.log(sum(10));
 
-showProperties(movie);
-
-function showProperties(obj) {
-  for (let prop in obj) {
-    if (typeof obj[prop] === 'string') 
-    console.log(prop + ': ' + obj[prop]);
+function sum(limit) {
+  let answer = 0;
+  for (let i=0; i<=limit; i++) {
+    if (i%3===0 || i%5===0) {
+      answer += i;
+    }
   }
+  return answer;
 }
