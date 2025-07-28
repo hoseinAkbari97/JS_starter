@@ -1,16 +1,15 @@
 // part 4: Control Flow
-// section 17: Sum of multiples of 3 and 5
+// section 18: Grade
 
-console.log(sum(10));
+const marks = [80, 80, 50];
 
-function sum(limit) {
-  let answer = 0;
+// console.log(calculateGrade(marks));
 
-  for (let i = 0; i <= limit; i++) {
-    if (i % 3===0 || i % 5=== 0) {
-      answer += i;
-    }
-  }
-  
-  return answer;
+function calculateGrade(marks) {
+  let sum = 0;
+
+  for (let mark of marks)
+    sum += mark;
+
+  let average = 
 }
