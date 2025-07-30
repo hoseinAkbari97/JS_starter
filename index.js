@@ -1,15 +1,24 @@
 // part 5: Objects
-// part 4: Dynamic nature of objects
+// part 5: Constructor property
 
-circle = {
-  radius: 1
-};
+// Factory Function
+function createCircle(radius) {
+  return {
+    radius,
+    draw: function() {
+      console.log("draw");
+    }
+  };
+}
 
-circle.color = 'yellow';
-circle.draw = function() {
-};
+const circle = createCircle(1);
 
-delete circle.color;
-delete circle.draw;
+// Constructor Function 
+function Circle(radius) {
+  this.radius = radius;
+  this.draw = function() {
+    console.log("draw");
+  }
+}
 
-console.log(circle)
+const another = new Circle(1);
