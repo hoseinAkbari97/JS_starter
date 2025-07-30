@@ -1,11 +1,9 @@
 // part 5: Objects
-// part 3: Constructor Function
+// part 4: Dynamic nature of objects
 
-function Circle(radius) {
-  this.radius = radius;
-  this.draw = function () {
-    console.log("draw");
-  }
-}
+circle = {
+  radius: 1
+};
 
-const circle = new Circle(1);
+circle.color = 'yellow';
+console.log(circle)
