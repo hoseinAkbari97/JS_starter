@@ -6,4 +6,7 @@ circle = {
 };
 
 circle.color = 'yellow';
+circle.draw = function() {
+  console.log(this.draw)
+};
 console.log(circle)
