@@ -1,26 +1,20 @@
 // part 5: Objects
-// part 5: Constructor property
+// part 6: Functions are objects
 
-// Factory Function
-function createCircle(radius) {
-  return {
-    radius,
-    draw: function() {
-      console.log("draw");
-    }
-  };
-}
-
-const circle = createCircle(1);
-
-// Constructor Function 
 function Circle(radius) {
   this.radius = radius;
   this.draw = function() {
-    console.log("draw");
-  }
+    console.log('draw');
+  };
 }
 
-const another = new Circle(1);
+const Circle1 = new Function ('radius', `
+  this.radius = radius;
+  this.draw = function() {
+    console.log('draw');
+  }
+  `);
 
-// starting a new episode
+const circle = new Circle1(1);
+
+const another = new Circle1(1);
